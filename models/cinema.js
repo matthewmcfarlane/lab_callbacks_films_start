@@ -6,7 +6,8 @@ const Cinema = function (films) {
 
 
 Cinema.prototype.allTitles = function(){
-  const allTitles = this.films.map(title => this.films.title);
+  const result = this.films.map(film => film.title);
+  return result
 };
 
 Cinema.prototype.findByTitle = function(title){
